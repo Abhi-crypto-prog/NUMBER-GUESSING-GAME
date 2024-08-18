@@ -1,0 +1,19 @@
+# NUMBER GUESSING GAME IN PYTHON (USING RANDOM MODULE)
+
+import random
+while True :
+
+    computer_number = random.randrange(1,101)
+    user_prompt = int(input("enter your guessing number:---"))
+
+    if computer_number < user_prompt :
+        print(computer_number)
+        print("congrats\n your guess num is too high")
+
+    elif computer_number > user_prompt :
+        print(computer_number)
+        print("oops!\n your guess num is too low")
+
+    else :
+        print(computer_number)
+        print("your guess num is equal to computer_num...")
